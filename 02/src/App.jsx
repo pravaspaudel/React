@@ -1,9 +1,12 @@
 import React from "react";
+import Navigation from "./components/Navigation";
+import Body from "./components/body";
 
 const App = () => {
   return (
     <>
-      <h1>tailwind configured</h1>
+      <Navigation />;
+      <Body />;
     </>
   );
 };
