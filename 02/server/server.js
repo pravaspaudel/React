@@ -13,6 +13,6 @@ app.listen(Port, () => {
   console.log(`Port is listening on port ${Port}`);
 });
 
-app.get("/api/data", (request, response) => {
+app.get("/api/data2", (request, response) => {
   response.json(foodData);
 });
