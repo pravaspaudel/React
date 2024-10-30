@@ -2,11 +2,11 @@ import React from "react";
 
 const FoodCard = ({ name, type, image, text, price }) => {
   return (
-    <div className="flex h-60 max-w-[28rem] bg-gray-800 rounded-lg p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
-      <div className="w-1/3 flex-shrink-0">
+    <div className="flex h-60 md:max-w-[28rem] max-w-[24rem] bg-gray-800 rounded-lg p-5 shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+      <div>
         <img
           src={image}
-          className="aspect-square rounded-full object-cover shadow-lg"
+          className="aspect-square rounded-full shadow-lg"
           alt="Food"
         />
       </div>

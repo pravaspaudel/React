@@ -5,7 +5,6 @@ import Body from "./components/body";
 const App = () => {
   return (
     <>
-      <Navigation />;
       <Body />;
     </>
   );
