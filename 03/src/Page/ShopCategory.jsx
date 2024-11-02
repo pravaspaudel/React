@@ -21,6 +21,7 @@ const ShopCategory = ({ category, banner }) => {
                 newprice={item.new_price}
                 name={item.name}
                 oldprice={item.old_price}
+                id={item.id}
               />
             );
           }

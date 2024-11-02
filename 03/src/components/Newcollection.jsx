@@ -13,6 +13,7 @@ const Newcollection = () => {
           key={id}
           newprice={item.new_price}
           oldprice={item.old_price}
+          id={item.id}
         />
       ))}
     </div>

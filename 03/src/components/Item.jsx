@@ -1,12 +1,16 @@
 // Item.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Item = ({ name, image, oldprice, newprice }) => {
+const Item = ({ name, image, oldprice, newprice, id }) => {
   return (
     <div className="w-64 transition hover:scale-90 ease-in-out mt-5">
       {" "}
       <div>
-        <img src={image} alt="img" className="w-full rounded-md" />{" "}
+        <Link to={`/product/${id}`}>
+          {" "}
+          <img src={image} alt="img" className="w-full rounded-md" />{" "}
+        </Link>
       </div>
       <div className="mt-2 text-center">
         {" "}
