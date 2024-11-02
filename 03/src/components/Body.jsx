@@ -1,7 +1,7 @@
 import React from "react";
-import bodyimage from "/Assets/body_image.png";
-import handicon from "/Assets/hand_icon.png";
-import arrow from "/Assets/arrow.png";
+import bodyimage from "../Assets/body_image.png";
+import handicon from "../Assets/hand_icon.png";
+import arrow from "../Assets/arrow.png";
 
 const Body = () => {
   return (

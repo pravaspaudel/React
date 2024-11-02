@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Shop from "./Page/shop";
+import Shop from "./Page/Shop";
 import ShopCategory from "./Page/ShopCategory";
 import Product from "./Page/Product";
 import Cart from "./Page/Cart";
 import LoginSignup from "./Page/LoginSignup";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </div>
   );

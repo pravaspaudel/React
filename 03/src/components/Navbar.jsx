@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "/Assets/logo.png";
-import cartlogo from "/Assets/cartlogo.png";
+import logo from "../Assets/logo.png";
+import cartlogo from "../Assets/cartlogo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
