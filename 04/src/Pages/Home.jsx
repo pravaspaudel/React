@@ -6,7 +6,7 @@ import { addItem } from "../Store/slices/CartSlice";
 const Home = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch(); // Initialize dispatch
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchdata = async () => {
@@ -25,7 +25,6 @@ const Home = () => {
     fetchdata();
   }, []);
 
-  // Define handleAddtoCart
   const handleAddtoCart = (item) => {
     dispatch(
       addItem({
@@ -64,7 +63,7 @@ const Home = () => {
               <p className="mb-4 text-gray-600">${item.price}</p>
               <button
                 className="w-full py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-800"
-                onClick={() => handleAddtoCart(item)} // Pass the item to handleAddtoCart
+                onClick={() => handleAddtoCart(item)}
               >
                 Add to Cart
               </button>
